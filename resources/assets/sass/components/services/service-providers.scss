@@ -1,0 +1,50 @@
+@import '../../includes/variables';
+@import '../../includes/utils';
+
+.module-service-providers {
+  height: 41em;
+  overflow-y: scroll;
+
+  .service-provider {
+    @include clearfix;
+    margin-bottom: 0;
+    border-bottom: 1px solid $gray-light;
+
+    .logo {
+      display: block;
+      float: left;
+      width: 90px;
+      height: 90px;
+      margin-right: 25px;
+    }
+
+    .info {
+      float: left;
+      margin-top: 1em;
+      width: calc(100% - 250px);
+    }
+
+    .company-name {
+      font-size: 1.25em;
+      font-weight: 600;
+    }
+
+    .service,
+    .phone,
+    .address {
+      width: 15%;
+      display: inline-block;
+      margin-right: 5%;
+      line-height: 20px;
+    }
+
+    .address {
+      width: 30%;
+      margin-right: 0;
+    }
+
+    .btn {
+      margin-top: 2.5em;
+    }
+  }
+}

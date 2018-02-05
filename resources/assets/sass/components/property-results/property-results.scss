@@ -1,0 +1,83 @@
+@import '../../includes/variables';
+@import '../../includes/utils';
+
+.main-container {
+  height: calc(100vh - 56px);
+  overflow: hidden;
+}
+
+.module-property-results {
+  background-color: white;
+  height: 95vh;
+  padding: 10px 0;
+
+  .panel-heading {
+    padding: 0 15px 10px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid $gray-light;
+  }
+
+  .panel-heading + .panel-heading {
+    border-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .panel-title {
+    padding: 0;
+    font-size: 16px;
+  }
+
+  .panel-body {
+    padding: 0;
+  }
+
+  .view-anchor {
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  form {
+    padding-right: 5px;
+    input, select {
+      border: 1px solid $gray-border;
+    }
+  }
+
+  .constrained {
+    overflow-y: scroll;
+    height: calc(100% - 150px);
+  }
+
+  .property {
+    @include clearfix;
+    @include indicators;
+    padding: 15px;
+    border-bottom: 1px solid $gray-light;
+
+    &:hover {
+      background-color: #f6f6f6;
+      cursor: pointer;
+    }
+
+    .logo {
+      display: block;
+      float: left;
+      margin-right: 20px;
+      margin-left: 10px;
+    }
+
+    .address {
+      font-size: 16px;
+    }
+
+    .address-city-state-zip {
+      margin-bottom: 5px;
+    }
+
+    .status,
+    .maintenance-needed {
+      font-size: 12px;
+      line-height: 18px;
+    }
+  }
+}

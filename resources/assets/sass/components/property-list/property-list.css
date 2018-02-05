@@ -1,0 +1,8 @@
+.module-property-list {
+  height: 300px;
+  overflow: hidden;
+  background-color: white;
+  float: right;
+  padding: 0 50px; }
+  .module-property-list table.borderless td, .module-property-list table.borderless th {
+    border: none; }

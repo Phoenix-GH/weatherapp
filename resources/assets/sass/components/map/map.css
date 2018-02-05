@@ -1,0 +1,11 @@
+.module-map .map {
+  width: auto; }
+  .module-map .map.full-height {
+    height: 95vh; }
+
+.module-map-address {
+  background-color: white;
+  z-index: 9999;
+  height: 60px;
+  margin-top: -20px;
+}

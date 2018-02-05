@@ -1,0 +1,638 @@
+@import 'includes/variables';
+@import 'includes/type';
+@import 'includes/spacing-helpers';
+
+body {
+  background: $gray-dust;
+  height: 100vh;
+  width: 100vw;
+  overflow: auto;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Regular", sans-serif;
+  font-size: 14px;
+  color: $gray-dark;
+}
+
+.bg-clouds {
+  background: $gray-dust url('/images/bg-clouds.svg');
+  background-size: contain;
+  height: 100vh;
+}
+
+.header-container {
+  margin-bottom: 2em;
+}
+
+header {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  height: 56px;
+  background-color: $white;
+  /*            line-height: 56px;*/
+  padding: 0 20px;
+  color: $white;
+  border-bottom: 2px solid $gray-light;
+  font-size: 13px;
+  font-family: 'Roboto', serif;
+  a {
+    text-decoration: none;
+    display: inline-block;
+    letter-spacing: .025em;
+    transition: all 500ms ease-in-out;
+    margin-right: 2em;
+    &:link,
+    &:visited {
+      color: $gray-dark
+    }
+    &:hover,
+    &:active {
+      color: rgb(173, 178, 181);
+    }
+  }
+}
+
+#footer{
+  background-color: #171717;
+}
+
+.header__sign-in {
+  align-items: center;
+  align-self: center;
+  display: flex;
+  justify-content: space-between;
+  text-align: right;
+}
+
+.head-content {
+  padding: 0px 5% 25px;
+  display: inline-block;
+  width: 100%;
+}
+
+.head-content span {
+  font-weight: bold;
+  font-size: 20px;
+  color: #bbb;
+}
+
+.side-wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
+  height: calc(100vh - 56px);
+  width: 100vw;
+
+  &.two-col {
+    flex-flow: row nowrap;
+  }
+}
+
+.image-hero {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+
+}
+
+.side-wrapper__left {
+  flex: 1 75%;
+
+}
+
+.side-wrapper__right {
+  flex: 1 60%;
+  background: url('/images/clouds.png') no-repeat center;
+  background-size: contain;
+  height: 80%;
+  transform: translate(-50px, -60px);
+  position: relative;
+  z-index: 2;
+  display: flex;
+}
+
+.logo-wc {
+  background-image: url('/images/logo.png');
+  width: 300px;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  align-self: flex-start;
+}
+
+.logo-wc.form {
+  height: 27px;
+  margin: 0 auto 20px;
+}
+
+.form-wrapper__sign-in {
+  display: flex;
+  justify-content: space-around;
+}
+
+.scroll-list {
+  overflow: auto;
+  height: 100%;
+}
+
+.module-progress-bar {
+  width: 600px;
+  margin: 20px auto;
+}
+
+.insurance-box-txt{
+    margin: 0 !important;
+    width: 100% !important;
+    padding: 0;
+    max-width: 100% !important;
+}
+
+.form-wrapper.insurance-box-txt .title{font-size: 32px;margin-bottom: 30px;}
+.form-wrapper.insurance-box-txt p{text-align:left}
+.form-wrapper.insurance-box-txt{text-align:center}
+.form-wrapper.insurance-box-txt a.btn{display:inline-block; width:auto}
+.module-newsletter.insurance-outrbox-txt{min-height:auto}
+
+
+.weather-table {
+    background: #fff;
+    border-radius: 5px;
+}
+
+.weather-table h4{
+    padding: 15px;
+}
+.weather-table table th, .weather-table table td{border:0; vertical-align:middle;}
+.weather-table table td{border-bottom:2px solid #fff; }
+.scroll-list table thead th,
+.scroll-list table tbody td{
+  border-bottom: 0 none;
+  border-top: 0 none;
+}
+.scroll-list table{
+  margin-bottom: 30px;
+  border-bottom: 1px solid #ddd;
+}
+.weather-table table td.img-thumb{
+  position: relative;
+}
+.weather-table table td.img-thumb:before{
+  background-color: #5e9dde;
+  content: "";
+  left: 0;
+  position: absolute;
+  top: 0;
+  height: 45px;
+  width: 5px;
+}
+.weather-table table th{
+  font-size: 16px;
+}
+.weather-table table td{
+  font-size: 15px;
+}
+
+.property-import{
+  background-color: #F3F4FA;
+}
+.fluid-container{
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+span.profile-image {
+    width: 45px;
+    height: 45px;
+    display: inline-block;
+    margin-right: 10px;
+}
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #8ec549;
+}
+.setting-sidebar {
+    padding: 0px;
+}
+.setting-sidebar .panel.panel-default {
+    border: none;
+    box-shadow: none;
+}
+body{
+  width: 100%;
+}
+.setting-sidebar .spark-settings-stacked-tabs li a {
+    background-color: #f5f6fa;
+    border-bottom: 0px;
+}
+.setting-sidebar .spark-settings-stacked-tabs li.active a {
+    background-color: #22497c;
+    color: #fff;
+    border-left: 0px;
+}
+.setting-sidebar .spark-settings-stacked-tabs li a i {
+    display: none;
+}
+.setting-sidebar .spark-settings-stacked-tabs li a {
+    background-color: #f5f6fa;
+    border-bottom: 0px;
+    padding: 8px 10px !important;
+}
+.setting-sidebar .spark-settings-stacked-tabs {
+    border-radius: 0px;
+}
+.setting-heading {
+    display: block;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 5px 10px;
+    font-size: 23px;
+}
+.sidebar-content {
+    background-color: #fff;
+    border: none;
+}
+.sidebar-content .panel.panel-default {
+    border: none;
+    margin-bottom: 0px;
+}
+.sidebar-content form.form-horizontal {
+    padding: 0 20px;
+}
+a.chang-pic {
+    color: #8ec549;
+    text-decoration: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.sidebar-content input.form-control {
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    text-align: right;
+    width: 250px;
+    float: right;
+    pointer-events: none;
+    color: #999;
+}
+.sidebar-content label.control-label {
+    text-align: left;
+}
+.sidebar-content .form-group {
+    margin: 10px auto;
+    border-bottom: 1px solid #dedede;
+}
+.sidebar-content .form-group:first-child {
+    border-top: 1px solid #dedede;
+}
+.profile-photo .form-group{
+  border-bottom: none;
+}
+.profile-photo span.profile-photo-preview {
+    border-radius: 50%;
+    border: 3px solid #8ec549;
+}
+.sidebar-content .profile-photo .form-group:first-child {
+    border: none;
+}
+.sidebar-content .form-group.login-button {
+    border: none;
+    text-align: center;
+}
+.sidebar-content button.btn.btn-green {
+    width: auto !important;
+}
+.sidebar-content h4 {
+    font-weight: bold;
+    padding: 0px 35px;
+}
+.sidebar-content form.edit-profile {
+    width: 60%;
+    margin: 0 auto;
+}
+.sidebar-content .edit-profile .form-group {
+    border: none;
+    display: inline-block;
+    width: 100%;
+}
+.sidebar-content .edit-profile .form-group label {
+    display: block;
+    font-weight: normal;
+}
+.sidebar-content .edit-profile .form-group input {
+    display: block;
+    width: 100%;
+    text-align: left;
+    border: 1px solid #dedede;
+    pointer-events: unset;
+}
+h4.edit-heading {
+    margin: 30px auto 0px;
+    font-size: 24px;
+}
+.edit-profile button.btn.pull-right.btn-green {
+    width: 150px !important;
+    margin: 0px !important;
+}
+.myModals .modal-body {
+    display: inline-block;
+    width: 100%;
+    padding: 20px 20px 30px;
+}
+.myModals .modal-content {
+    border-radius: 0px;
+}
+.myModals button.close {
+    padding: 0px 10px;
+    opacity: 0.5;
+    font-size: 30px;
+}
+.myModals h4 {
+    text-align: center;
+    margin: 0px auto 40px;
+}
+a.delete-photo {
+    background-color: red;
+    color: #fff;
+    padding: 6px 20px;
+    display: inline-block;
+    margin: 0px auto 30px;
+    min-width: 150px;
+    text-align: center;
+}
+.blk {
+    margin: 10px auto;
+    display: inline-block;
+    width: 100%;
+}
+.button-sec {
+    border-left: 1px solid #dedede;
+    padding-left: 30px;
+}
+.image-sec {
+    text-align: right;
+    padding-right: 30px;
+}
+label.blue-border.pull-left.btn-link.btn-tranparent.btns-blue.btn-upload {
+    vertical-align: middle;
+    width: auto;
+    display: inline-block;
+    margin: 15px auto 0px;
+    padding: 6px 20px;
+    min-width: 150px;
+    text-align: center;
+}
+.stripe-logo {
+    margin: 40px auto;
+}
+
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  .side-wrapper {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    height: calc(100vh - 35px);
+  }
+
+  .side-wrapper__left {
+    flex: 0 80%;
+    order: 2;
+    min-width: 80%;
+  }
+
+  .side-wrapper__right {
+    margin: 40px auto;
+    flex: 0 80%;
+    min-width: 100vw;
+    z-index: 2;
+    order: 1;
+    height: initial;
+    transform: none;
+  }
+
+}
+
+.single-address-map {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.col{
+  margin-top: 15px;
+  margin-left:0px;
+  margin-right:15px;
+  background-color:white;
+}
+.navbar-fixed-top {
+  top: 0;
+  border-width: 0 0 1px;
+  background-color: #fff;
+}
+.btn-green {
+  background: #8EC549 !important;
+  margin-left: 5px !important;;
+  margin-right: 5px !important;;
+}
+
+.blue-border.btn-tranparent.btns-blue {
+  background-color: transparent;
+  border: 2px solid #22497c;
+  color: #22497c;
+  width: 100%;
+  height: 35px;
+  margin: 30px auto;
+  text-transform: uppercase;
+  font-size: 12px;
+  text-decoration: none;
+}
+a.btn-link.btn-tranparent.btns-blue {
+  padding: 6px 12px;
+  width: 100px;
+  display: inline-block;
+  text-align: center;
+  margin: 0px;
+  text-decoration: none;
+}
+button.btns.btns-green.pull-right {
+  background-color: #8ec549;
+  border: 0px;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 6px 12px;
+  height: 35px;
+  min-width: 120px;
+  font-size: 12px;
+}
+.thick-color{
+  background-color: #fff;
+}
+.billing-content.sidebar-content {
+    background-color: transparent;
+}
+.thick-color h4.edit-heading {
+    font-size: 18px;
+    padding: 20px;
+    border-bottom: 1px solid #dedede;
+}
+.thick-color form {
+    padding: 10px;
+    width: 90%;
+    margin: 0 auto;
+}
+.edit-billing .name-block label {
+    display: block;
+    width: 100% !important;
+}
+.edit-billing label {
+    width: 30%;
+    float: left;
+}
+.edit-billing a {
+    width: 30%;
+    float: right;
+    text-align: right;
+}
+.edit-billing .data {
+    width: 40%;
+    float: left;
+    color: #999;
+}
+.edit-billing .form-group {
+    display: inline-block;
+    width: 100%;
+    margin: 8px auto 0px;
+    padding: 0px 0px 8px;
+}
+.edit-plan .form-group {
+    display: inline-block;
+    width: 100%;
+    margin: 15px auto 0px;
+    padding: 0px 0px 10px;
+}
+.thick-color button.btn.btn-green {
+    min-width: 150px;
+}
+.myModals select {
+    width: 100%;
+    border: 1px solid #dedede;
+    border-radius: 4px;
+    height: 36px;
+    padding: 3px;
+}
+.thick-color .form-group:first-child {
+    border-top: none;
+}
+form.edit-plan {
+    margin-top: 20px;
+}
+.edit-billing .name-block input.form-control {
+    float: left;
+    border: 1px solid #dedede;
+    text-align: left;
+}
+.edit-billing .form-group.name-block {
+    padding: 5px 0px 20px;
+    border-top: 0px;
+}
+.edit-plan span.desc {
+    width: 30%;
+    float: right;
+    color: #aaa;
+}
+.thick-color label {
+    font-weight: normal;
+}
+a.stripe-connect {
+    text-align: center;
+    display: block;
+}
+.stripe-logo img {
+    width: 180px;
+}
+.myModals .form-group {
+    border: none !important;
+    margin: 10px auto;
+    display: inline-block;
+    width: 100%;
+}
+form.plan-edit-form {
+    width: 60%;
+    margin: 0 auto;
+    text-align: left;
+}
+form.stripe-connect-form {
+    width: 50%;
+    margin: 0 auto;
+    display: inline-block;
+    text-align: left;
+}
+.bottom-section {
+    text-align: center;
+}
+.myModals input.form-control {
+    text-align: left;
+    width: 100%;
+    border: 1px solid #dedede;
+    padding: 5px;
+    pointer-events: unset;
+}
+.myModals .form-group.row > div:first-child {
+    padding: 0px 7px 0px 0px;
+}
+.myModals .form-group.row > div:nth-child(2) {
+    padding: 0px 0px 0px 7px;
+}
+.payment-method-form .form-group {
+    width: 60%;
+    text-align: left;
+}
+.payment-method-form .form-group.login-button {
+    width: 100%;
+}
+p img.small-logo {
+    width: 50px;
+    margin-left: 5px;
+}
+table.previous-invoices {
+    width: 95%;
+    margin: 20px auto;
+}
+.float-unset.invoices {
+    text-align: center;
+    padding-bottom: 20px;
+}
+.previous-invoices td:nth-child(4), .previous-invoices th:nth-child(4) {
+    text-align: center;
+}
+.previous-invoices td, .previous-invoices th {
+    padding: 10px;
+    border-bottom: 1px solid #dedede;
+}
+.thick-color {
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+.payment-method-form button.btn.pull-right.btn-green , .plan-edit-form button.btn.pull-right.btn-green, .invoice-button{
+    min-width: 150px;
+}
+.bottom-section a.delete-photo {
+    margin: 0px;
+}
+form.payment-method-form {
+    width: 90%;
+    margin: 0 auto;
+}
+
+@media only screen and (min-device-width: 320px) {
+  .with-rail-nav .spark-app {
+    padding-left: 72px;
+  }
+}

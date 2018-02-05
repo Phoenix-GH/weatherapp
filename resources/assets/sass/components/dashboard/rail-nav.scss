@@ -1,0 +1,39 @@
+@import '../../includes/icons';
+@import '../../vendor/bourbon/bourbon';
+
+.rail-nav {
+    @include background-image(linear-gradient($ebony-clay, $congress-blue));
+
+    position: fixed;
+    left: 0;
+    width: 72px;
+    height: 100vh;
+    box-sizing: border-box;
+    padding-top: 16px;
+
+    .icon {
+        display: block;
+        width: 72px;
+        height: 72px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    svg {
+        display: inline-block;
+        margin-top: 50%;
+        transform: translateY(-50%);
+        max-width: 36px;
+    }
+
+    .icon.active,
+    .icon:hover {
+        path {
+            stroke: $seagull;
+        }
+    }
+}
+
+a svg:hover {
+    fill: #8EC549;
+}

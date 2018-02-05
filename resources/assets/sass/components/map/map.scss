@@ -1,0 +1,19 @@
+@import '../../includes/variables';
+@import '../../includes/utils';
+
+.module-map {
+  .map {
+    width: auto;
+    &.full-height {
+      height: 95vh;
+    }
+  }
+}
+
+.module-map-address {
+  background-color: white;
+  z-index: 9999;
+  height: 80px;
+  margin-top:-20px;
+  padding-top:15px;
+}

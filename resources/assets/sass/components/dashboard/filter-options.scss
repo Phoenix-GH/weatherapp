@@ -1,0 +1,84 @@
+@import '../../includes/variables';
+@import '../../includes/utils';
+
+.property-rating {
+  margin: 0 auto;
+  float: none;
+
+  .slice {
+    .bar,
+    .fill {
+      border-color: $green;
+    }
+  }
+
+  .info {
+    position: absolute;
+    top: 65px;
+    font-size: 5rem;
+    width: 240px;
+    z-index: 10;
+    text-align: center;
+
+    span {
+      display: block;
+      white-space: normal;
+    }
+
+    .percentage {
+      font-size: 80px;
+      line-height: 80px;
+      height: 80px;
+    }
+
+    .label {
+      color: $gray-dark;
+      font-size: 14px;
+      font-weight: 400;
+      width: 160px;
+      margin: 5px auto 0;
+    }
+  }
+}
+
+.module-property-list {
+  .panel-heading {
+    border-bottom-color: $gray-light;
+  }
+
+  h4 {
+    padding: 0;
+  }
+
+  .filter-label {
+    font-size: 15px;
+    font-weight: 400;
+  }
+
+  .btn {
+    width: auto;
+    background: $blue-light;
+    font-weight: 400;
+    font-size: .75em;
+    text-shadow: none;
+    margin-left: 10px;
+    border-radius: 6px;
+    text-transform: none;
+  }
+
+  .selected {
+    background: #fff;
+    color: $blue;
+  }
+
+  .constrained {
+    overflow-y: scroll;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .panel-footer {
+    background: #fff;
+    text-align: right;
+  }
+}

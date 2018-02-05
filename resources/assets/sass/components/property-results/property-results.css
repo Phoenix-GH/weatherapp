@@ -1,0 +1,69 @@
+.main-container {
+  height: calc(100vh - 56px);
+  overflow: hidden; }
+
+.module-property-results {
+  background-color: white;
+  height: 95vh;
+  padding: 10px 0; }
+  .module-property-results .panel-heading {
+    padding: 0 15px 10px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #d1d1d4; }
+  .module-property-results .panel-heading + .panel-heading {
+    border-bottom: 0;
+    padding-bottom: 0; }
+  .module-property-results .panel-title {
+    padding: 0;
+    font-size: 16px; }
+  .module-property-results .panel-body {
+    padding: 0; }
+  .module-property-results .view-anchor {
+    font-size: 13px;
+    line-height: 18px; }
+  .module-property-results form {
+    padding-right: 5px; }
+    .module-property-results form input, .module-property-results form select {
+      border: 1px solid #979797; }
+  .module-property-results .constrained {
+    overflow-y: scroll;
+    height: calc(100% - 150px); }
+  .module-property-results .property {
+    position: relative;
+    padding: 15px;
+    border-bottom: 1px solid #d1d1d4; }
+    .module-property-results .property:before {
+      display: table;
+      content: " "; }
+    .module-property-results .property:after {
+      content: "";
+      display: table;
+      clear: both; }
+    .module-property-results .property.status-needs-attention:before, .module-property-results .property.status-needs-maintenance:before {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 6px; }
+    .module-property-results .property.status-needs-attention:before {
+      background-color: #1a77b9; }
+    .module-property-results .property.status-needs-maintenance:before {
+      background-color: #D81414; }
+    .module-property-results .property:hover {
+      background-color: #f6f6f6;
+      cursor: pointer; }
+    .module-property-results .property .logo {
+      display: block;
+      float: left;
+      margin-right: 20px;
+      margin-left: 10px; }
+    .module-property-results .property .address {
+      font-size: 16px; }
+    .module-property-results .property .address-city-state-zip {
+      margin-bottom: 5px; }
+    .module-property-results .property .status,
+    .module-property-results .property .maintenance-needed {
+      font-size: 12px;
+      line-height: 18px; }

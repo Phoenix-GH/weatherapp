@@ -1,0 +1,26 @@
+{
+  "name": "elevenlab/php-ogc",
+  "description": "GeoSpatial objects (Open Geo Consortium compliant)",
+  "license": "GNU GPL v3.0",
+  "keywords": ["geo", "geospatial", "ogc"],
+  "authors": [
+    {
+      "name": "Lorenzo Giustozzi",
+      "email": "giustozzi@lorenzo.im"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=5.4.0",
+    "creof/wkb-parser": "^2.3",
+    "creof/wkt-parser": "^2.2"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "4.0.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "ElevenLab\\PHPOGC\\": "src/"
+    }
+  }
+}

@@ -1,0 +1,10 @@
+@import '../../includes/variables';
+
+.module-property-list {
+  //Only styles that manage layout should go in here.
+
+  background-color: white;
+  .border-bottom {
+    color: $light-blue;
+  }
+}

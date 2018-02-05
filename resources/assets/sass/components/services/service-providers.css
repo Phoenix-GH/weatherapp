@@ -1,0 +1,38 @@
+.module-service-providers {
+  height: 41em;
+  overflow-y: scroll; }
+  .module-service-providers .service-provider {
+    margin-bottom: 0;
+    border-bottom: 1px solid #d1d1d4; }
+    .module-service-providers .service-provider:before {
+      display: table;
+      content: " "; }
+    .module-service-providers .service-provider:after {
+      content: "";
+      display: table;
+      clear: both; }
+    .module-service-providers .service-provider .logo {
+      display: block;
+      float: left;
+      width: 90px;
+      height: 90px;
+      margin-right: 25px; }
+    .module-service-providers .service-provider .info {
+      float: left;
+      margin-top: 1em;
+      width: calc(100% - 250px); }
+    .module-service-providers .service-provider .company-name {
+      font-size: 1.25em;
+      font-weight: 600; }
+    .module-service-providers .service-provider .service,
+    .module-service-providers .service-provider .phone,
+    .module-service-providers .service-provider .address {
+      width: 15%;
+      display: inline-block;
+      margin-right: 5%;
+      line-height: 20px; }
+    .module-service-providers .service-provider .address {
+      width: 30%;
+      margin-right: 0; }
+    .module-service-providers .service-provider .btn {
+      margin-top: 2.5em; }

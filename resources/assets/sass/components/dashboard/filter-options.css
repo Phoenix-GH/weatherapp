@@ -1,0 +1,59 @@
+.property-rating {
+  margin: 0 auto;
+  float: none; }
+  .property-rating .slice .bar,
+  .property-rating .slice .fill {
+    border-color: #8ec549; }
+  .property-rating .info {
+    position: absolute;
+    top: 65px;
+    font-size: 5rem;
+    width: 240px;
+    z-index: 10;
+    text-align: center; }
+    .property-rating .info span {
+      display: block;
+      white-space: normal; }
+    .property-rating .info .percentage {
+      font-size: 80px;
+      line-height: 80px;
+      height: 80px; }
+    .property-rating .info .label {
+      color: #6a6a6a;
+      font-size: 14px;
+      font-weight: 400;
+      width: 160px;
+      margin: 5px auto 0; }
+
+.module-property-list .panel-heading {
+  border-bottom-color: #d1d1d4; }
+
+.module-property-list h4 {
+  padding: 0; }
+
+.module-property-list .filter-label {
+  font-size: 15px;
+  font-weight: 400; }
+
+.module-property-list .btn {
+  width: auto;
+  background: #078fdb;
+  font-weight: 400;
+  font-size: .75em;
+  text-shadow: none;
+  margin-left: 10px;
+  border-radius: 6px;
+  text-transform: none; }
+
+.module-property-list .selected {
+  background: #fff;
+  color: #1a77b9; }
+
+.module-property-list .constrained {
+  overflow-y: scroll;
+  padding-top: 0;
+  padding-bottom: 0; }
+
+.module-property-list .panel-footer {
+  background: #fff;
+  text-align: right; }

@@ -1,0 +1,41 @@
+@mixin clearfix {
+  &:before {
+    display: table;
+    content: " ";
+  }
+
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin indicators {
+  position: relative;
+
+  &.status-needs-attention:before,
+  &.status-needs-maintenance:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 6px;
+  }
+
+  &.status-needs-attention:before {
+    background-color: $blue;
+  }
+
+  &.status-needs-maintenance:before {
+    background-color: #D81414;
+  }
+}
+
+@mixin linear-gradient($direction, $color-stops...) {
+  background: nth(nth($color-stops, 1), 1);
+  background: -webkit-linear-gradient(legacy-direction($direction), $color-stops);
+  background: linear-gradient($direction, $color-stops);
+}
