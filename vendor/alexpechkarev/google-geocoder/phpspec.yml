@@ -1,4 +1,0 @@
-suites:
-    geocoder_suite:
-        spec_prefix: spec
-        src_path: src/Alexpechkarev/GoogleGeocoder

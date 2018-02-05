@@ -1,5 +1,0 @@
-suites:
-  cornford_suite:
-    namespace: Cornford
-    src_path: src
-    spec_prefix: spec

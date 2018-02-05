@@ -1,8 +1,28 @@
-# WeatherCheck - Laravel Framework Guide
+# weathercheck
 
-Required Software Docker
-----------
- 1. https://www.docker.com/community-edition#/download
+> WeatherCheck Application
 
+## Build Setup
+
+``` bash
+# install Docker
+https://www.docker.com/community-edition#/download
+
+# install npm
+https://docs.npmjs.com/cli/install
+
+#run Docker
 docker-compose up -d
-docker-compose exec php php artisan migrate
+
+# install dependencies
+npm install
+
+# serve with hot reload at localhost:8080
+npm run dev
+
+# build for production with minification
+npm run build
+
+# build for production and view the bundle analyzer report
+npm run build --report
+```
